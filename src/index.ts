@@ -3,8 +3,7 @@ import { createApplication } from "./app";
 
 async function main() {
   try {
-    // const server = createServer(createApplication()); // createServer(express application)
-    const server = createServer(createApplication());
+    const server = createServer(createApplication()); // createServer(express application)
     const PORT: number = 8080;
 
     server.listen(PORT, () => {
